@@ -1,0 +1,310 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    color: #ff0;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    position: relative;
+}
+
+#home {
+    background: url('./assets/3.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#about, #benefits, #marketplace, #contact {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 60px 20px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+#about:hover, #benefits:hover, #marketplace:hover, #contact:hover {
+    background-color: #ddd;
+    transform: scale(1.02);
+}
+
+#about {
+    background-color: #eef;
+}
+
+#benefits {
+    background-color: #efe;
+}
+
+#marketplace {
+    background-color: #fee;
+}
+
+#contact {
+    background-color: #eef;
+}
+
+h1, h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    animation: slideIn 1s forwards;
+}
+
+p, ul {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+    animation: fadeIn 1.5s forwards;
+}
+
+ul {
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff0;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #ff0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media li a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media li a img:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.content img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content img {
+        max-width: 80%;
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form label, form input, form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-content p {
+        font-size: 0.9em;
+    }
+
+    .social-media li a img {
+        width: 25px;
+        height: 25px;
+    }
+}
