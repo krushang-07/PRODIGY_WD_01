@@ -4,15 +4,10 @@ This project is a landing page for NFTs (Non-Fungible Tokens). The page is desig
 
 ## Table of Contents
 
-- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
-
-## Demo
-
-You can view a live demo of the NFT Landing Page [here](#).
 
 ## Features
 
