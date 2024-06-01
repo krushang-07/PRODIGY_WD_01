@@ -9,7 +9,6 @@ This project is a landing page for NFTs (Non-Fungible Tokens). The page is desig
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
-- [License](#license)
 
 ## Demo
 
@@ -44,7 +43,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/nft-landing-page.git
+    git clone https://github.com/krushang-07/PRODIGY-WD-01.git
     ```
 
 2. **Navigate to the project directory**:
